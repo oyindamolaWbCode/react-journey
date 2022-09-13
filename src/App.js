@@ -3,6 +3,7 @@ import { useState } from "react";
 import Greet from "./Greet";
 import Mini from "./Mini";
 import Welcome from "./Welcome";
+import State from "./State";
 
 // loader component
 // const Loader = () => {
@@ -23,6 +24,7 @@ const App = () => {
       <Greet name="Beep" nickname="tommy"/>
       <Mini />
       <Welcome />
+    <State />
     </div>
    );
 
