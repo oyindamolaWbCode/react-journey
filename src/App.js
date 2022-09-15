@@ -4,6 +4,7 @@ import Greet from "./Greet";
 import Mini from "./Mini";
 import Welcome from "./Welcome";
 import State from "./State";
+import Effect from "./Effect";
 
 // loader component
 // const Loader = () => {
@@ -25,6 +26,7 @@ const App = () => {
       <Mini />
       <Welcome />
     <State />
+    <Effect />
     </div>
    );
 
