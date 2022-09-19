@@ -5,7 +5,9 @@ const Effect = () => {
   const [count, setCount] = useState(0);
 
   useEffect(() => {
-    console.log("App component rendered");
+    if(count > 0){
+       console.log("App component rendered");
+    }
   }, [count]);
 
   const handleClick = (event) => {
