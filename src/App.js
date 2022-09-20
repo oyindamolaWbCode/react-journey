@@ -6,6 +6,8 @@ import Welcome from "./Welcome";
 import State from "./State";
 import Effect from "./Effect";
 import Context from "./context";
+import Pagination from "./pagination";
+import {  Router, Route, Routes, Link } from "react-router-dom";
 
 // loader component
 // const Loader = () => {
@@ -19,31 +21,46 @@ import Context from "./context";
 
 // content component
 const App = () => {
-  return ( 
-    <div className="App">
-      <Greet name="Bruce" nickname="tip"/>
+  return (
+    <Router>
+      <div className="App">
+        {/* <Greet name="Bruce" nickname="tip"/>
       <Greet name="Bronze" nickname="tipsy"/>
-      <Greet name="Beep" nickname="tommy"/>
-      <Mini />
-      <Welcome />
-    <State />
-    <Effect />
-    <Context />
-    </div>
-   );
-
-  
-}
+      <Greet name="Beep" nickname="tommy"/> */}
+        <div className="content">
+          <switch>
+          <Route exact path="/">
+            <Welcome />
+          </Route>
+          <Route path="/mini">
+            <Mini />
+          </Route>
+          {/* <State />
+    <Effect /> */}
+          {/* <Context /> */}
+          {/* <Pagination /> */}
+          </switch>
+        </div>
+      </div>
+    </Router>
+//     <Routes>
+//     <div className="content">
+//       <Route exact path="/" element={<Welcome />}>
+//       <Route path="/mini" element={<Mini />}>
+//     </div>
+// </Routes>
+  );
+};
 
 //create root for rndering
 
 // const Loading = () =>{
 //   const [isLoading, setIsLoading] = useState(true);
 
-  //setTimeout 
-  // setTimeout(() =>{
-  //   setIsLoading(false);
-  // }, 1000)
+//setTimeout
+// setTimeout(() =>{
+//   setIsLoading(false);
+// }, 1000)
 
 //render
 // return(
@@ -52,5 +69,5 @@ const App = () => {
 //   </section>
 // )
 // }
- 
-export default App
+
+export default App;
