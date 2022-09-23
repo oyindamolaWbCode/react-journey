@@ -38,3 +38,35 @@ Link{
 .pagination{
   margin-top:30px;
 }
+
+.news{
+  max-width:600px;
+  margin: 0 auto;
+  padding:50px 20px;
+  width:100%;
+}
+
+.new-item{
+  background:#fff;
+  border:3px solid #ccc;
+  padding:20px;
+  border-radius:10px;
+  margin:10px;
+  max-width:250px;
+}
+
+.prev{
+  max-width:250px;
+  margin:0px 10px 0px 200px ;
+ 
+  width:100%;
+  padding:20px 20px;
+  
+}
+
+.next{
+  max-width:250px;
+  margin:0 auto;
+  width:100%;
+  padding:20px 20px;
+}
