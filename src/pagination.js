@@ -5,9 +5,10 @@ import { Link } from "react-router-dom";
 const Pagination = () => {
   
   //set up state
-  const [currentItem, setCurrentItem] = useState(0);
+  const [currentPosition, setCurrentPosition] = useState(0);
   const [news, setNews] = useState(null);
  const [loading, setLoading] = useState(true);
+ const [listItems, setListItems] = useState([]);
 
   //set initial state
   useEffect(() => {
@@ -38,24 +39,36 @@ const Pagination = () => {
       description: "Latest news from BBC",
     },
   ];
-    const item = newsItems[currentItem];
+    const item = newsItems[currentPosition];
     console.log(item)
     setNews(item);
+    setListItems(newsItems);
     setLoading(false);
-  }, [currentItem]);
+  }, [currentPosition]);
 
   //handle next button
   const handleNext = (event) => {
     event.preventDefault();
     //update
-    setCurrentItem(prev => prev + 1);
+    const length =listItems.length;
+    const count = length - 1
+    if(currentPosition < count - 1 ){
+      setCurrentPosition(currentPosition + 1);
+    }else{
+      setCurrentPosition(0);
+    }
+    //setCurrentPosition(prev => prev + 1);
   };
 
   //handle previous button
   const handlePrevious = (event) => {
     event.preventDefault();
     //update
-    setCurrentItem(prev => prev - 1);
+    if(currentPosition > 0){
+   setCurrentPosition(prev => prev - 1);
+    }else{
+      setCurrentPosition(0);
+    }
   };
 
   //list items
