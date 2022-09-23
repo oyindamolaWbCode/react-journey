@@ -20,3 +20,21 @@ button{
   border: none;
   margin:15px ;
 }
+
+.btn-pink{
+  padding:15px 25px;
+  color:black;
+  background-color: aqua;
+  border-radius:10px;
+  border: none;
+  margin:15px ;
+  text-decoration: none;
+}
+
+Link{
+  text-decoration: none;
+}
+
+.pagination{
+  margin-top:30px;
+}
