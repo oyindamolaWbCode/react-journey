@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Pagination from "./pagination";
+//import Pagination from "./pagination";
 
 const Welcome = (props) => {
   return (
@@ -11,7 +11,7 @@ const Welcome = (props) => {
         <Link
           className="btn-pink"
           role="button"
-          to="/pagination"
+          to="./pagination"
         >
           Click Me To Pagination
         </Link>

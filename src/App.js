@@ -1,12 +1,12 @@
 import React from "react";
 import { useState } from "react";
-import Greet from "./Greet";
-import Mini from "./Mini";
-import Welcome from "./Welcome";
-import State from "./State";
-import Effect from "./Effect";
-import Context from "./context";
-import Pagination from "./pagination";
+import Greet from "./Components/Greet";
+import Mini from "./Components/Mini";
+import Welcome from "./Components/Welcome";
+import State from "./Components/State";
+import Effect from "./Components/Effect";
+import Context from "./Components/context";
+import Pagination from "./Components/pagination";
 import { Router, Route, Routes, Link } from "react-router-dom";
 
 // loader component
