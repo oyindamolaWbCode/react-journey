@@ -7,6 +7,7 @@ import State from "./Components/State";
 import Effect from "./Components/Effect";
 import Context from "./Components/context";
 import Pagination from "./Components/pagination";
+import Test from "./Components/Test";
 import { Router, Route, Routes, Link } from "react-router-dom";
 
 // loader component
@@ -24,6 +25,7 @@ const App = () => {
   return (
     <div className="content">
       <Routes>
+        <Route path="/Test" element={<Test />} />
         <Route exact path="/" element={<Welcome />} />
         <Route path="/mini" element={<Mini />} />
         <Route path="/pagination" element={<Pagination />} />

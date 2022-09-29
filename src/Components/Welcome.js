@@ -7,6 +7,7 @@ const Welcome = (props) => {
       <h4>Welcome !</h4>
       <p> Its's a pleasure to have you here.</p>
       <Link to="/mini">Mini Homepage</Link>
+      <Link to="/Test"> Test component Homepage</Link>
       <div className="pagination">
         <Link
           className="btn-pink"
